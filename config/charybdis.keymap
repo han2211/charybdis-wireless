@@ -94,28 +94,28 @@
 
         NUM {
             bindings = <
-&trans   &none  &none  &none  &none          &none        &kp ASTRK  &hm F7 N7  &hm F8 N8  &hm F9 N9  &kp F10        &none
-&trans   &none  &none  &none  &none          &none        &kp MINUS  &hm F4 N4  &hm F5 N5  &hm F6 N6  &hm F11 PLUS   &trans
-&none    &none  &none  &none  &kp BACKSPACE  &kp SPACE    &td_equals &hm F1 N1  &hm F2 N2  &hm F3 N3  &hm F12 SLASH  &none
-                       &none  &none          &trans       &kp DOT    &kp N0
+   &kp ESC    &kp N1     &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7    &kp N8     &kp N9      &kp N0  &kp BSPC
+   &kp TAB    &kp F1     &kp F2       &kp F3       &kp F4       &kp F5         &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT   &kp F11 &kp DEL
+   &kp LSHFT  &kp F6     &kp F7       &kp F8       &kp F9       &kp F10        &kp HOME  &kp PG_DN &kp PG_UP  &kp END     &kp F12 &trans
+   &kp LALT  &kp LGUI  &kp LCTRL  &lt 1 SPC  &mo 2  &lt 2 RET  &kp SPC  &mo 1   &kp LGUI  &lt 3 LANG2
             >;
         };
 
         NAV {
             bindings = <
-&none   &none   &none   &none   &none   &none     &detach_session  &create_or_attach  &next_pane   &show_sessions  &sync_panes       &none
-&trans  &trans  &trans  &trans  &trans  &none     &h_split         &kp LEFT_ARROW     &kp DOWN     &kp UP          &kp RIGHT_ARROW   &none
-&none   &none   &none   &none   &none   &none     &v_split         &kp HOME           &kp PG_DN    &kp PG_UP       &kp END           &none
-                        &none   &none   &trans    &trans   &trans
+   &kp ESC  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
+   &kp TAB  &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
+   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+      &mo 3  &kp LGUI  &kp LCTRL  &lt 1 SPC &mo 2  &lt 2 RET  &kp SPC  &mo 1  &kp LGUI  &lt 3 LANG1
             >;
         };
 
         SYM {
             bindings = <
-&none  &none  &none  &none  &none   &none      &kp ASTRK   &kp AMPS       &kp LEFT_BRACE &kp DLLR &td_grave &kp EXCL
-&none  &none  &none  &none  &trans  &none      &td_hyphen  &kp SEMICOLON  &kp LPAR       &kp LBKT &kp PLUS  &kp PIPE
-&none  &none  &none  &none  &none   &none      &kp AT_SIGN &kp UNDERSCORE &kp LT         &kp HASH &kp PRCNT &kp BSLH
-                   &trans  &trans  &trans      &trans      &trans
+   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6           &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp MINUS  &kp BSPC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp MINUS        &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp PLUS  &kp DEL
+   &kp LSHFT   &out OUT_TOG   &trans       &trans       &trans       &trans      &kp KP_MULTIPLY  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp FSLH  &kp RSHFT
+     &trans   &trans      &trans     &trans       &trans      &trans  &trans                     &kp KP_N0             &kp KP_DOT   &trans
             >;
         };
 
@@ -148,10 +148,10 @@
 
         MOUSE {
             bindings = <
-&none    &msc MOVE_LEFT  &msc MOVE_UP    &mmv MOVE_UP    &msc MOVE_DOWN   &msc MOVE_RIGHT    &none  &none            &none      &none         &none          &none
-&kp TAB  &mkp MB4        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp MB5           &none  &kp RIGHT_SHIFT  &kp RCTRL  &kp LEFT_ALT  &kp LCMD  &none
-&none    &kp C_AC_UNDO   &kp C_AC_CUT    &kp C_AC_COPY   &kp C_AC_PASTE   &mkp MCLK          &none  &none            &none      &none         &none          &none
-                                         &trans          &trans           &trans             &kp RETURN              &trans
+   &kp ESC  &kp Q &kp W &kp E &kp R &kp T    &mkp MB4 &kp U  &kp I  &kp O   &kp P    &kp BSPC
+   &kp TAB &kp A &kp S &kp D &kp F &kp G     &mkp MCLK &mkp MB5  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &mkp LCLK &mkp RCLK  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
+   &kp LALT  &kp LGUI  &kp LCTRL  &lt 1 SPC  &mo 2  &mo 2  &kp SPC  &mo 1 &kp LGUI   &mo 3 
             >;
         };
 
