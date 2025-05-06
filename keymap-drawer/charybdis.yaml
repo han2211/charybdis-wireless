@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   BASE:
-  - DEV TOOLS
+  - ESC
   - Q
   - W
   - E
@@ -12,31 +12,31 @@ layers:
   - I
   - O
   - P
-  - L_BASE L_PHOTO L_GAME
-  - {t: TAB, h: LCMD}
-  - {t: A, h: SYM}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LEFT SHIFT}
+  - BSPC
+  - TAB
+  - A
+  - S
+  - D
+  - F
   - G
   - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RCMD}
-  - DEL
-  - SEARCH
+  - J
+  - K
+  - L
+  - ;
+  - ''''
+  - LSHFT
   - Z
-  - {t: X, h: MEH}
-  - {t: C, h: HYPER}
+  - X
+  - C
   - V
   - B
   - N
   - M
-  - {t: ',', h: HYPER}
-  - {t: ., h: MEH}
-  - ~/
-  - CLIP HIST
+  - ','
+  - .
+  - /
+  - RSHFT
   - SCRL SLOW
   - L CLK
   - '&td_bs'
@@ -140,7 +140,7 @@ layers:
   - '&td_grave'
   - '!'
   - ''
-  - {type: held}
+  - ''
   - ''
   - ''
   - {t: ▽, type: trans}
