@@ -49,6 +49,6 @@
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         //scroll-layers = <2>;
-        automouse-layer = <7>;
+        //automouse-layer = <7>;
     };
 };
