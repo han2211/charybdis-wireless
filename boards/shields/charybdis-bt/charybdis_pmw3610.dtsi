@@ -1,4 +1,4 @@
-n#define INPUT_EV_KEY 0x01               /**< Key event */
+#define INPUT_EV_KEY 0x01               /**< Key event */
 #define INPUT_EV_REL 0x02               /**< Relative coordinate event */
 #define INPUT_EV_ABS 0x03               /**< Absolute coordinate event */
 #define INPUT_EV_MSC 0x04               /**< Miscellaneous event */
@@ -59,7 +59,7 @@ n#define INPUT_EV_KEY 0x01               /**< Key event */
         y-input-code = <INPUT_REL_Y>;
     };
 };
-n
+
 // Set up the QDEC hardware based driver and give it the same label as the deleted node.
 right_encoder: &qdec0 {
     status = "okay";
