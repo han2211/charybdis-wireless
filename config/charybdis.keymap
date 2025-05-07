@@ -85,7 +85,7 @@
 // #define GAME    4
 // #define PHOTOS  5
 // #define EXTRAS  6
-// #define MOUSE   7
+// #define MOUSE   7n
 // #define SLOW    8
 // #define SCROLL  9
      
@@ -95,8 +95,8 @@
 		#sensor-binding-cells = <0>;
 		tap-ms = <30>;
 		//bindings = <&inc_dec_kp C_VOLUME_UP>,<&inc_dec_kp C_VOLUME_DOWN>;  // 에러남
-        	//bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-        	bindings = <&kp PG_UP>, <&kp PG_DN>;
+        	bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        	//indings = <&kp PG_UP>, <&kp PG_DN>;  //잘 작동함
 	};
 
 	keymap {
