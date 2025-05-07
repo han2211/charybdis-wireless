@@ -90,8 +90,6 @@
 // #define SCROLL  9
      
 
-
-
 	scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 		compatible = "zmk,behavior-sensor-rotate";
 		#sensor-binding-cells = <0>;
@@ -119,7 +117,8 @@
 
         NUM {
             //sensor-bindings = <&scroll_up_down>;
-	    sensor-bindings = <&inc_dec_kp UP DOWN>;
+	    //sensor-bindings = <&inc_dec_kp UP DOWN>;
+	    sensor-bindings = <&inc_dec_kp C_FF C_RW>;
             bindings = <
    &kp ESC    &kp N1     &kp N2       &kp N3       &kp N4       &kp N5         &kp N6    &kp N7    &kp N8     &kp N9      &kp N0  &kp BSPC
    &kp TAB    &kp F1     &kp F2       &kp F3       &kp F4       &kp F5         &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT   &kp F11 &kp DEL
