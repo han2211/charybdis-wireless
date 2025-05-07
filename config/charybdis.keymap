@@ -105,8 +105,7 @@
 	keymap {
         compatible = "zmk,keymap";
         BASE {
-            sensor-bindings = <&scroll_up_down_new>;
-            //sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>;
 	    //sensor-bindings = <&inc_dec_kp UP DOWN>; 
 
 
