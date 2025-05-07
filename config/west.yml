@@ -1,16 +1,16 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/petejohanson
-      #nurl-base: https://github.com/zmkfirmware
-    - name: badjeff
-      url-base: https://github.com/badjeff
     - name: ftc
       url-base: https://github.com/ftc
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: badjeff
+      url-base: https://github.com/badjeff
+
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: feat/pointers-move-scroll
+      revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
       remote: badjeff
@@ -23,6 +23,3 @@ manifest:
       revision: main
   self:
     path: config
-jobs:
-  build:
-    uses: petejohanson/zmk/.github/workflows/build-user-config.yml@core/zephyr-3.2-update
