@@ -9,6 +9,12 @@
 #include "behaviors.dtsi"
 #include "combos.dtsi"
 
+
+
+//#define ZMK_MOUSE_SCRL_VAL 140
+// mouse.h 중복으로 아래 주석처리함
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 130
+
 / {
     /* input config for mouse move mode */
     trackball_listener {
@@ -86,8 +92,7 @@
 		compatible = "zmk,behavior-sensor-rotate";
 		#sensor-binding-cells = <0>;
 		tap-ms = <30>;
-        	//bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-	        bindings = <&ib_wheel_scaler 1 14>
+        	bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 	};
 
     keymap {
