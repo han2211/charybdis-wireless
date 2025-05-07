@@ -91,15 +91,6 @@
 // #define SLOW    8
 // #define SCROLL  9
      
-
-&msc {
-    acceleration-exponent = <1>;  // 0
-    time-to-max-speed-ms = <40>;  // 300
-    delay-ms = <0>;
-    trigger-period-ms = <8>;      // 16
-};
-
-
 	scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 		compatible = "zmk,behavior-sensor-rotate";
 		#sensor-binding-cells = <0>;
