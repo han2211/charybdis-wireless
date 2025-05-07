@@ -97,8 +97,8 @@
 		#sensor-binding-cells = <0>;
 		tap-ms = <30>;
 	        //y-input-code = <&ms SCRL_UP>, <&msc SCRL_DOWN>;
-	       	bindings = <&ib_wheel_scaler 1 14>;
-        	//bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+	       	//bindings = <&ib_wheel_scaler 1 14>;
+        	bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 	};
 
 	keymap {
