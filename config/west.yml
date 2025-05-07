@@ -2,7 +2,7 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/petejohanson
-      url-base: https://github.com/zmkfirmware
+      #nurl-base: https://github.com/zmkfirmware
     - name: badjeff
       url-base: https://github.com/badjeff
     - name: ftc
@@ -23,3 +23,6 @@ manifest:
       revision: main
   self:
     path: config
+jobs:
+  build:
+    uses: petejohanson/zmk/.github/workflows/build-user-config.yml@core/zephyr-3.2-update
