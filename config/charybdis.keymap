@@ -107,7 +107,7 @@
         input-code = <&inc_dec_kp UP DOWN>;
  	bindings = <&ib_wheel_scaler_new 1 14>;
     };
-    ib_wheel_scaler_new: ib_wheel_scaler {
+    ib_wheel_scaler_new: ib_wheel_scaler_new {
         compatible = "zmk,input-behavior-scaler";
         #binding-cells = <2>;
         evt-type = <&inc_dec_kp UP DOWNL>;
