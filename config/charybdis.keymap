@@ -17,7 +17,7 @@
 //#define ZMK_MOUSE_SCRL_VAL 140
 // mouse.h 중복으로 아래 주석처리함
 //#define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 120
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 130
 
 / {
     /* input config for mouse move mode */
