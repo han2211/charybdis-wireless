@@ -12,7 +12,7 @@
 
 
 
-//#define ZMK_MOUSE_SCRL_VAL 140
+#define ZMK_MOUSE_SCRL_VAL 140
 // mouse.h 중복으로 아래 주석처리함
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 130
 
@@ -87,29 +87,15 @@
 // #define MOUSE   7
 // #define SLOW    8
 // #define SCROLL  9
+     
 
-
-
-// scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-//     compatible = "zmk,behavior-sensor-rotate";
-//     #sensor-binding-cells = <0>;
-//     tap-ms = <30>;
-//     bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-// };
-// &msc {
-//     x-input-code = <INPUT_REL_HWHEEL>;
-//     y-input-code = <INPUT_REL_WHEEL>;
-//     time-to-max-speed-ms = <300>;
-//     acceleration-exponent = <0>;
-// };
-
+   // 엔코더 휠 스크롤 현재 안됨..ㅠㅠ
 	scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 		compatible = "zmk,behavior-sensor-rotate";
 		#sensor-binding-cells = <0>;
 		tap-ms = <30>;
 		bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 	}; 
-
 
     keymap {
         compatible = "zmk,keymap";
