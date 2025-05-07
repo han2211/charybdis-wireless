@@ -17,6 +17,7 @@
 //#define ZMK_MOUSE_SCRL_VAL 140
 // mouse.h 중복으로 아래 주석처리함
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
+#define SCRL_UP MOVE_Y(ZMK_MOUSE_DEFAULT_SCRL_VAL)
 
 / {
     /* input config for mouse move mode */
@@ -90,7 +91,6 @@
 // #define SLOW    8
 // #define SCROLL  9
      
-#define SCRL_UP MOVE_Y(ZMK_MOUSE_DEFAULT_SCRL_VAL)
 
 &mmv {
     acceleration-exponent = <1>;  // 1
