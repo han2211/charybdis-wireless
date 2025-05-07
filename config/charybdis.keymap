@@ -90,33 +90,16 @@
 // #define SCROLL  9
      
 
-   // 엔코더 휠 스크롤 현재 안됨..ㅠㅠ
+	// 엔코더 휠 스크롤 현재 안됨..ㅠㅠ
+	behaviors {
 	scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-		compatible = "zmk,behavior-sensor-rotate";
-		#sensor-binding-cells = <0>;
-		tap-ms = <30>;
-		bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-	}; 
+	    compatible = "zmk,behavior-sensor-rotate";
+	    #sensor-binding-cells = <0>;
+	    bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+	};
+	};
 
-// ..ㅠㅠ
-    scroll_up_down_new: behavior_sensor_rotate_mouse_wheel_up_down2 {
-	compatible = "zmk,behavior-sensor-rotate";
-	#sensor-binding-cells = <0>;
-	tap-ms = <30>;
-        evt-type = <&inc_dec_kp UP DOWN>;
-        input-code = <&inc_dec_kp UP DOWN>;
- 	bindings = <&ib_wheel_scaler_new 1 14>;
-    };
-    ib_wheel_scaler_new: ib_wheel_scaler_new {
-        compatible = "zmk,input-behavior-scaler";
-        #binding-cells = <2>;
-        evt-type = <&inc_dec_kp UP DOWNL>;
-        input-code = <&inc_dec_kp UP DOWN>;
-    };
-
-
-
-    keymap {
+	keymap {
         compatible = "zmk,keymap";
         BASE {
             sensor-bindings = <&scroll_up_down_new>;
