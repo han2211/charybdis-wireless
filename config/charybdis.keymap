@@ -3,7 +3,7 @@
 #include <behaviors/mouse_scroll.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+//#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <behaviors/mouse_keys.dtsi>
@@ -86,7 +86,7 @@
 // #define GAME    4
 // #define PHOTOS  5
 // #define EXTRAS  6
-// #define MOUSE   7n
+// #define MOUSE   7
 // #define SLOW    8
 // #define SCROLL  9
      
@@ -94,10 +94,10 @@
 	scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 		compatible = "zmk,behavior-sensor-rotate";
 		#sensor-binding-cells = <0>;
-		tap-ms = <30>;
+		tap-ms = <20>;
 		//bindings = <&inc_dec_kp C_VOLUME_UP>,<&inc_dec_kp C_VOLUME_DOWN>;  // 에러남
-        	bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-        	//indings = <&kp PG_UP>, <&kp PG_DN>;  //잘 작동함
+        	//bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        	indings = <&kp PG_UP>, <&kp PG_DN>;  //잘 작동함
 	};
 
 	keymap {
